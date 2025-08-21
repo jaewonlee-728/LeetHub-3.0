@@ -110,12 +110,14 @@ function constructGitHubPath(
       const path = useDifficultyFolder
         ? `${language}/${difficulty}/${problem}/${filename}`
         : `/${language}/${problem}/${filename}`;
+      // TODO: Modify here for the path
       return `https://api.github.com/repos/${hook}/contents/coding/LeetCode/${path}`;
     }
   }
   const path = useDifficultyFolder
     ? `${basePath}/${difficulty}/${problem}/${filename}`
     : `${problem}/${filename}`;
+  // TODO: Modify here for the path
   return `https://api.github.com/repos/${hook}/contents/coding/LeetCode/${path}`;
 }
 
